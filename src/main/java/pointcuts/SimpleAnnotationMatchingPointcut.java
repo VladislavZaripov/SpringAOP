@@ -10,7 +10,7 @@ import org.springframework.aop.support.annotation.AnnotationMatchingPointcut;
 public class SimpleAnnotationMatchingPointcut {
 
     public void execute(){
-        System.out.print("\nAspectJExpressionPointcut: ");
+        System.out.print("\nAnnotationMatchingPointcut: ");
 
         AnnotationMatchingPointcut pointcut = AnnotationMatchingPointcut.forMethodAnnotation(AdviceRequired.class);
         Advice advice = new SimpleAfterReturningAdvice();
